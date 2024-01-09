@@ -7,7 +7,14 @@
     --Blue:#005678;
     --LightBLue:#05d9e8;
     --DarkBlue:#01012b;
+    --Yellow:#f8ef02;
 }
+@font-face {
+    /*https://www.fontspace.com/category/cyberpunk*/
+    font-family: CyberFont1;
+    src: url(assets/techno-charm-version-font/TechnoCharmDemoVersionRegular-ALaZm.otf);
+    font-weight: 500;
+  }
 *{
   margin: 0px 0px 0px 0px;
   padding: 0 0 0 0;
@@ -30,4 +37,32 @@
 .NavBar{
     min-width: 100%;
     height: 10vh;
+    display: flex;
+    background-color: var(--Yellow);
+    position: fixed;
+}
+.NavRight{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavCenter{
+    width: 40%;
+    height: 100%;
+}
+.NavLeft{
+    width: 30%;
+    height: 100%;
+}
+.NavLogo{
+    height: 40px;
+    width: 60px;
+    margin-right:15px;
+}
+.NavHeading{
+    font-size: 30px;
+    color: var(--DarkBlue);
+    font-family:CyberFont1 ;
 }
