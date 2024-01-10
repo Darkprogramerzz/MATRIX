@@ -12,9 +12,17 @@
 @font-face {
     /*https://www.fontspace.com/category/cyberpunk*/
     font-family: CyberFont1;
-    src: url(assets/techno-charm-version-font/TechnoCharmDemoVersionRegular-ALaZm.otf);
+    src: url(assets/Cyberpunk.otf);
     font-weight: 500;
   }
+@font-face{
+    font-family: CyberFont2;
+    src: url(assets/BlenderProBook.woff2);
+}
+@font-face{
+    font-family: CyberFont3;
+    src: url(assets/Oxanium.woff2);
+}
 *{
   margin: 0px 0px 0px 0px;
   padding: 0 0 0 0;
@@ -24,15 +32,15 @@
     height: 100vh;
 }
 .BackgroundVideo{
-    width: 98.7vw;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
     position: absolute;
+    transform: translateZ(-10px)scale(2);
 }
 .NavBar{
     min-width: 100%;
@@ -55,15 +63,15 @@
     margin-left: 10%;
 }
 .NavLogo{
-    height: 45px;
-    width: 65px;
+    height: 50px;
+    width: 75px;
     margin-right:15px;
 }
 .NavHeading{
-    font-size: 35px;
+    font-size: 40px;
     color: var(--Yellow);
-    font-family:CyberFont1 ;
-    text-shadow: 3px 2px var(--LightBLue),5px 2px var(--Pink);
+    font-family:CyberFont2 ;
+    z-index:1;
 }
 header ul{
     position: relative;
@@ -79,9 +87,127 @@ header ul li a{
     position: relative;
     text-decoration: none;
     color: var(--Yellow);
-    font-family:CyberFont1 ;
+    font-family:CyberFont3 ;
     text-align: center;
     font-size: 25px;
     margin: 0 10px 0 10px;
-    text-shadow: 3px 2px var(--LightBLue),5px 2px var(--Pink)
 }
+::-webkit-scrollbar {
+    background-color: var(--DarkBlue);
+    opacity: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--Pink);
+    border-bottom: 3px solid var(--LightBLue);
+    border-right: 4px solid var(--LightBLue);
+  }
+  @keyframes h1glitched {
+    0% {
+      transform: skew(-20deg);
+      left: -4px;
+    }
+    10% {
+      transform: skew(-20deg);
+      left: -4px;
+    }
+    11% {
+      transform: skew(0deg);
+      left: 2px;
+    }
+    50% {
+      transform: skew(0deg);
+    }
+    51% {
+      transform: skew(10deg);
+    }
+    59% {
+      transform: skew(10deg);
+    }
+    60% {
+      transform: skew(0deg);
+    }
+    100% {
+      transform: skew(0deg);
+    }
+  }
+  
+  h1.cyberpunk.glitched:before {
+    animation-name: h1beforeglitched;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes h1beforeglitched {
+    0% {
+      transform: skew(-20deg);
+      left: -4px;
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    10% {
+      transform: skew(-20deg);
+      left: -4px;
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    11% {
+      transform: skew(0deg);
+      left: 2px;
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    50% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    51% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    59% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 40% 5px, calc(40% - 30px) 0px, calc(40% + 30px) 0px, calc(45% - 15px) 5px, 100% 5px, 100% 6px, calc(45% - 14px) 6px, calc(40% + 29px) 1px, calc(40% - 29px) 1px, calc(40% + 1px) 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    60% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+    }
+    100% {
+      transform: skew(0deg);
+      clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
+      text-shadow: 2px 2px var(--Pink);
+    }
+  }
+  .home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+  .Heading{
+    font-family: CyberFont1;
+    font-size: 90px;
+    color: var(--PinkishRed);
+    animation-name: h1glitched;
+    animation-duration: 1.26s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-shadow: 5px 2px var(--LightBLue);
+    
+  }
+  .Heading span{
+    font-size: 100px;
+  }
+  .CyberEthics{
+    background-color: var(--DarkBlue);
+    font-size: 2rem;
+    color: wheat;
+    padding-top: 20px;
+  }
+  .wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
