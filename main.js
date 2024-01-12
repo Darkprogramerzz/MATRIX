@@ -28,8 +28,11 @@ document.querySelector(".scramble").onmouseover = event => {
 }
 let WinDow = document.querySelector('.wrapper');
 let scrollposition = 0;
+let navBar = querySelector('.NavBar');
 WinDow.addEventListener('scroll',() =>{
     let scrollposition = WinDow.scrollTop;
-    console.log(scrollposition)
 })
+if(scrollposition> 200){
+    navBar.classList.
+}
 

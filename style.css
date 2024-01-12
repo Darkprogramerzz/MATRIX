@@ -72,8 +72,12 @@ body {
   display: flex;
   position: fixed;
   margin-top: 20px;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-
 .NavRight {
   width: 30%;
   height: 100%;
@@ -104,27 +108,12 @@ body {
   z-index: 1;
 }
 
-.NavBar {
-  width: fit-content;
-  height: fit-content;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .NavBar ul {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.NavBar ul li {
-  list-style: none;
-  position: relative;
-}
-
 .NavBar ul li a {
   position: relative;
   text-decoration: none;
