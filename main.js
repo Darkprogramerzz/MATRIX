@@ -26,3 +26,10 @@ document.querySelector(".scramble").onmouseover = event => {
         iteration += (1 / (50 / event.target.dataset.value.length)) + (iteration / 20);
     }, 30);
 }
+let WinDow = document.querySelector('.wrapper');
+let scrollposition = 0;
+WinDow.addEventListener('scroll',() =>{
+    let scrollposition = WinDow.scrollTop;
+    console.log(scrollposition)
+})
+

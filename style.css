@@ -71,7 +71,7 @@ body {
   height: 15vh;
   display: flex;
   position: fixed;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .NavRight {
@@ -88,6 +88,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 5%;
+  margin-top: 15px;
 }
 
 .NavLogo {
@@ -142,16 +143,16 @@ body {
   perspective: 10px;
 }
 
-.wrapper::-webkit-scrollbar {
+::-webkit-scrollbar {
   background-color: var(--DarkBlue);
   opacity: 0;
 }
 
-.wrapper::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: var(--Pink);
   border-bottom: 3px solid var(--LightBLue);
   border-right: 4px solid var(--LightBLue);
-}
+}*/
 
 h1.cyberpunk.glitched:before {
   animation-name: h1beforeglitched;
