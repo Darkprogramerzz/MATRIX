@@ -27,12 +27,7 @@ document.querySelector(".scramble").onmouseover = event => {
     }, 30);
 }
 let WinDow = document.querySelector('.wrapper');
-let scrollposition = 0;
-let navBar = querySelector('.NavBar');
-WinDow.addEventListener('scroll',() =>{
-    let scrollposition = WinDow.scrollTop;
-})
-if(scrollposition> 200){
-    navBar.classList.
-}
-
+WinDow.addEventListener("scroll", function() {
+    let navbar =document.querySelector('.NavBar')
+    navbar.classList.toggle('navbar',WinDow.scrollTop > 500)
+  });
