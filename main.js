@@ -30,4 +30,7 @@ let WinDow = document.querySelector('.wrapper');
 WinDow.addEventListener("scroll", function() {
     let navbar =document.querySelector('.NavBar')
     navbar.classList.toggle('navbar',WinDow.scrollTop > 500)
+    if(WinDow.scrollTop > 500){
+        document.getElementById("navlogo").src = "hackanm.gif";
+    }
   });
