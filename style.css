@@ -216,7 +216,11 @@ h1.cyberpunk.glitched:before {
 
 .whatIsCyberEthics{
   font-family: CyberFont3;
-  font-size: 25px;
+  font-size: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: black;
+  font-weight: 500;
 }
 @keyframes h1glitched {
   0% {
