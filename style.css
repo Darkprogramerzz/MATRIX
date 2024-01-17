@@ -208,13 +208,16 @@ h1.cyberpunk.glitched:before {
 
 
 .CyberEthics {
-  background-color: var(--LightPurple);
-  font-size: 2rem;
-  color: wheat;
-  padding-top: 20px;
+  background-color: var(--LightPink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
+.whatIsCyberEthics{
+  font-family: CyberFont3;
+  font-size: 25px;
+}
 @keyframes h1glitched {
   0% {
     transform: skew(-20deg);
