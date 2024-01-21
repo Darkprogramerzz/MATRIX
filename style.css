@@ -115,7 +115,7 @@ body {
 .NavBar ul li{
   list-style: none;
 }
-.NavBar ul li a {
+.NavBar ul li a{
   position: relative;
   text-decoration: none;
   color: var(--Yellow);
@@ -124,7 +124,6 @@ body {
   font-size: 25px;
   margin: 0 10px 0 10px;
 }
-
 .navbar{
   min-width: 98.8%;
   height: 15vh;
@@ -221,6 +220,111 @@ h1.cyberpunk.glitched:before {
   margin-right: 15px;
   color: black;
   font-weight: 500;
+  text-align:center;
+}
+.Privacy{
+  background-color: var(--LightPurple);
+  padding-top: 50px;
+}
+.whatisPrivacy{
+  text-align: center;
+  font-size: 30px;
+  font-family: CyberFont3;;
+  margin: 0px 10px 50px 10px;
+  font-weight: 500;
+  color: var(--Yellow);
+}
+.text5{
+  text-align:left;
+  font-size: 25px;
+  font-family: CyberFont3;;
+  margin: 0px 0px 30px 30px;
+  font-weight: 500;
+  color: var(--Yellow);
+}
+.Privacy li{
+  text-align:left;
+  font-size: 20px;
+  font-family: CyberFont3;;
+  margin: 0px 0px 30px 100px;
+  font-weight: 500;
+  color: var(--Yellow);
+  list-style: none;
+}
+.Privacy li::marker{
+  content:"\25A0";
+  font-size: 2rem;
+  color: var(--Yellow);
+  vertical-align: bottom;
+}
+.DigitalRights{
+  background-color: var(--DarkBlue);
+  padding: 50px 10px 10px 10px ;
+}
+.whatisDigitalRights{
+  text-align: center;
+  font-size: 35px;
+  font-family: CyberFont3;;
+  font-weight: 500;
+  color: var(--LightBLue);
+}
+.text6{
+  text-align:left;
+  font-size: 30px;
+  font-family: CyberFont3;;
+  margin: 20px 0px 30px 30px;
+  font-weight: 500;
+  color: var(--LightBLue);
+}
+.DigitalRights li::marker{
+  content:"\25A0";
+  font-size: 2rem;
+  color: var(--LightBLue);
+  vertical-align: bottom;
+}
+.DigitalRights li{
+  text-align:left;
+  font-size: 20px;
+  font-family: CyberFont3;;
+  margin: 0px 0px 30px 100px;
+  font-weight: 500;
+  color: var(--LightBLue);
+  list-style: none;
+}
+.Law{
+  background-color: blue;
+  padding: 50px 10px 10px 10px ;
+  height: 180vh;
+}
+.whatisCybercrime{
+  text-align: center;
+  font-size: 35px;
+  font-family: CyberFont3;;
+  font-weight: 500;
+  color: var(--Yellow);
+}
+.text7{
+  text-align:left;
+  font-size: 30px;
+  font-family: CyberFont3;;
+  margin: 20px 0px 30px 30px;
+  font-weight: 500;
+  color: var(--Yellow);
+}
+.Law li::marker{
+  content:"\25A0";
+  font-size: 2rem;
+  color: var(--Yellow);
+  vertical-align: bottom;
+}
+.Law li{
+  text-align:left;
+  font-size: 30px;
+  font-family: CyberFont3;;
+  margin: 0px 0px 30px 50px;
+  font-weight: 500;
+  color: var(--Yellow);
+  list-style: none;
 }
 @keyframes h1glitched {
   0% {
